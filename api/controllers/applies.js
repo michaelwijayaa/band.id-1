@@ -38,6 +38,8 @@ exports.apply_event = (req, res, next) => {
         }
         const apply = new Apply({
             _id: mongoose.Types.ObjectId(),
+            isActive: true,
+            isAccepted: false,
             event: req.body.event
         })
         return apply.save()
