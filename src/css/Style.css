@@ -1,0 +1,134 @@
+.wrapper {
+    margin: auto;
+    width: 75%;
+    color: #fefefe;
+
+}
+
+.page-content {
+    background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+}
+
+.grid {
+	background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.banner {
+	margin: auto;
+	width: 80%;
+	border-radius: 11px;
+	opacity: 0.9;
+	text-align: center;
+}
+
+.banner img {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.banner h1 {
+	font-size: 66px;
+	font-family: NewsGoth;
+	color: white;
+	font-weight: bold;
+}
+
+.banner span {
+    font-size: 70px;
+    font-weight: bolder;
+    color: aquamarine;
+}
+
+.banner hr {
+	border-top: 5px groove white;
+	width: 80%;
+	margin: auto;
+}
+
+.banner p {
+	font-family: Fira Code;
+	color: #fefefe;
+	font-size: 43px;
+}
+
+.footer {
+	background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to top,
+		#243b55,
+		#141e30
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to top,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer .footer-list {
+	color: aqua;
+	margin-left: 50%;
+	margin-right: 50%;
+}
+
+.Login {
+    background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Register {
+    background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Events {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}

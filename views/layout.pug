@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        title HeyHey
+        link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet' href='css/style.css')
+    body
+        nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+            a.navbar-brand(href='/') Band-Id Dev
+            ul.nav.navbar-nav
+                li
+            a(href='/') Home
+
+            ul.nav.navbar-nav.navbar-right
+            if users
+                li
+                a(href='/users/logout') Logout
+            else
+                li
+                    a(href='/users/register') Register
+                li
+                    a(href='/users/login') Login
+
+
+.container
+        block content
+        br
+        hr
+        footer
+            p copyright &copy; 2019
+        script(src='/js/main.js')
+        script(src='/js/main.js')
+        script(src='/js/main.js')
