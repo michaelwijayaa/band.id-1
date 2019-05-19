@@ -3,7 +3,7 @@ const Event = require('../models/event')
 
 exports.events_get_all = (req, res, next) => {
     Event.find()
-    .select('_id name location eventImage')
+    .select('_id name description location eventImage')
     .exec()
     .then(docs => {
         const response = {
@@ -13,6 +13,7 @@ exports.events_get_all = (req, res, next) => {
                     _id: doc._id,
                     name: doc.name,
                     location: doc.location, 
+                    description: doc.description,
                     eventImage: doc.eventImage,                   
                     request:{
                         type: 'GET',

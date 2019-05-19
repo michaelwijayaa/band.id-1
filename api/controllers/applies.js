@@ -4,7 +4,7 @@ const Event = require('../models/event')
 
 exports.apply_get_all = (req, res, next) => {
     Apply.find()
-    .select('_id event')
+    .select('_id user event')
     .populate('event', 'name')
     .exec()
     .then(docs => {
@@ -13,6 +13,7 @@ exports.apply_get_all = (req, res, next) => {
             apply: docs.map(doc => {
                 return {
                     _id: doc._id,
+                    user: doc.user,
                     event: doc.event,                    
                     request:{
                         type: 'GET',
