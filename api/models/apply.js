@@ -6,6 +6,8 @@ const applySchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Users'
     },
+    message: String,
+    bid: Number,
     isActive: Boolean,
     isAccepted: Boolean,
     event: {

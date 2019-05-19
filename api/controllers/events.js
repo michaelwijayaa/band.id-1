@@ -33,9 +33,11 @@ exports.events_create = (req, res, next) => {
     const event = new Event({
         _id: mongoose.Types.ObjectId(),
         name: req.body.name,
+        description: req.body.description,
         user: req.user,
         location: req.body.location,
-        eventImage: req.file.path
+        eventImage: req.body.eventImage
+        // eventImage: req.file.path
     })
     event.save()
     .then(result => {
@@ -45,6 +47,7 @@ exports.events_create = (req, res, next) => {
             createdEvent: {
                 _id: result._id,
                 name: result.name,
+                description:result.description,
                 user: result.user,
                 location: result.location,      
                 eventImage: result.eventImage,              

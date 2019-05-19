@@ -39,6 +39,8 @@ exports.apply_event = (req, res, next) => {
         const apply = new Apply({
             _id: mongoose.Types.ObjectId(),
             user: req.user,
+            message: req.body.message,
+            bid: req.body.bid,
             isActive: true,
             isAccepted: false,
             event: req.body.event
@@ -51,6 +53,9 @@ exports.apply_event = (req, res, next) => {
             message: 'Application sent',
             appSend: {
                 _id: result._id,
+                user: result.user,
+                isActive: result.isActive,
+                isAccepted: result.isAccepted,
                 event: result.event,                
                 request:{
                     type: 'POST',
