@@ -1,3 +1,18 @@
+### How to install
+
+Make sure you have installed Node.js (https://nodejs.org/en/download/)
+Run npm install on the project's directory
+Run node app on the project's directory to run the backend service 
+Run npm start on the project's directory to run the webpage
+
+Alternatively, you can install concurrently (npm install concurrently) and nodemon (npm install nodemon), 
+then run npm run dev on the project's directory to run both services in 1 terminal.
+
+### Timeline
+
+This project is currently under development, even after its due dates. The developer wants to use this project as the basis
+for further learning the JavaScript.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
