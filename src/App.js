@@ -26,6 +26,8 @@ import Profile from './Components/Profile';
 import { getToken } from './Helpers/jwt';
 import Auth from './Components/Auth';
 import NewEvent from './Components/NewEvent';
+import Help from './Components/Help';
+import Terms from './Components/Terms';
 
 class App extends Component {
     render() {
@@ -58,6 +60,8 @@ class App extends Component {
                                         <Route exact path='/event' component={Event} />
                                         <Route path='/event/new' component={NewEvent} />
                                         <Route path='/auth' component={Auth} />
+                                        <Route path='/help' component={Help} />
+                                        <Route path='/terms' component={Terms} />
                                     </Switch>
                                 </div>
                             </Content>

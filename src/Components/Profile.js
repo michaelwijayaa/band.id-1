@@ -1,9 +1,10 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
+import '../css/Style.css'
 import { getToken } from '../Helpers/jwt';
 import Axios from 'axios';
-import { Card, Button, CardHeader, Avatar, CardMedia, CardContent, Typography, CardActions } from "@material-ui/core";
+import { Button, Typography, Paper, Card } from "@material-ui/core";
 
-class Profile extends PureComponent {
+class Profile extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -48,14 +49,16 @@ class Profile extends PureComponent {
         console.log(this.state.user.user)
         if (this.state.user.user != null && typeof this.state.user.user != undefined) {
             return (
-                <div className="wrapper">
-                    <h1>Hello, {this.state.user.user.username} ! </h1>
-                    <h3>User Info</h3>
-                    <h5>Name : {this.state.user.user.name} </h5>
-                    <h5>Email : {this.state.user.user.email} </h5>
-                    {/* <h5>Password : {this.state.user.user.password} </h5> */}
-                    <button onClick={(event) => this.logOut(event)}>Log Out</button>
-                </div>
+                <Paper>
+                    <div className="wrapper">
+                        <h1>Hello, {this.state.user.user.username} ! </h1>
+                        <h3>User Info</h3>
+                        <h5>Name : {this.state.user.user.name} </h5>
+                        <h5>Email : {this.state.user.user.email} </h5>
+                        {/* <h5>Password : {this.state.user.user.password} </h5> */}
+                        <Button style={{ marginLeft: '30px' }} onClick={(event) => this.logOut(event)}>Log Out</Button>                    </div>
+                </Paper>
+
                 // <div className="user">
                 //         <Card className='userCard'>
                 //             <CardHeader
@@ -79,7 +82,10 @@ class Profile extends PureComponent {
             )
         } else {
             return (
-                <h2> No Record </h2>
+                <Card>
+                    <h2> Loading . . . </h2>
+                </Card>
+
             )
         }
     }

@@ -30,13 +30,14 @@ class Login extends Component {
             this.props.history.push('/profile');
         }).catch(err => {
             console.log(err);
+            alert(' Login gagal ')
         })
     }
 
     render() {
         return (
             <Layout>
-                <Card className='Login' shadow={3} style={{ margin: 'auto', marginBottom: '100px', marginTop: '100px', padding: '30px' }}>
+                <Card className='Login' shadow={3} style={{ margin: 'auto', padding: '30px' }}>
                     <h2 style={{ textAlign: 'center' }}> Login </h2>
                     <form onSubmit={(event) => this.onSubmit(event)} style={{ marginLeft: '50px' }}>
                         <h5>Username</h5>

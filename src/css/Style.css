@@ -1,8 +1,9 @@
 .wrapper {
     margin: auto;
     width: 75%;
-    color: #fefefe;
-
+    color: #243b55;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .page-content {
@@ -127,8 +128,3 @@
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.Events {
-    display: flex;
-    margin: 10px;
-    flex-wrap: wrap;
-}

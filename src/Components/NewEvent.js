@@ -27,7 +27,9 @@ class NewEvent extends Component {
             name: this.state.name,
             location: this.state.location,
             date: this.state.date,
-            description: this.state.description
+            description: this.state.description,
+            user: '',
+            eventImage: ''
         }).then(res => {
             console.log(res)
             this.props.history.push('/event');

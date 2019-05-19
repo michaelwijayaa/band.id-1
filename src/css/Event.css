@@ -1,9 +1,13 @@
 /* shadow={5} style={{ width: '300px', height: '320px', margin: 'auto' }} */
 
-.eventCard {
+.Event {
+    background-color: #fff;
     box-shadow: 5px;
-    width: 300px;
+    width: 15000px;
     height: 320px;
-    margin: auto;
-    display: flex;
+    padding: 10px;
+}
+
+.eventList {
+    background: #fff;
 }
