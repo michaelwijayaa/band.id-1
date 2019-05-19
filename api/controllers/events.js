@@ -30,6 +30,7 @@ exports.events_get_all = (req, res, next) => {
 }
 
 exports.events_create = (req, res, next) => {
+    // if(req.user.role == "Band")
     const event = new Event({
         _id: mongoose.Types.ObjectId(),
         name: req.body.name,
@@ -38,7 +39,7 @@ exports.events_create = (req, res, next) => {
         location: req.body.location,
         eventImage: req.body.eventImage
         // eventImage: req.file.path
-    })
+    })  
     event.save()
     .then(result => {
         console.log(result)

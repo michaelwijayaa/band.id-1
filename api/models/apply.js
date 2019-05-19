@@ -4,7 +4,7 @@ const applySchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Users'
+        ref: 'User'
     },
     message: String,
     bid: Number,
